@@ -1,5 +1,2 @@
-# utility-scripts
-
-
-A collection of utility scripts
-
+Usefull scripts:
+sessioner.sh - get temporary AWS credentials
