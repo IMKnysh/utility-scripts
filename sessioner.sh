@@ -1,6 +1,15 @@
 #!/bin/bash
 # inputs needed - user name (user) and MFA code (TOKEN)
 # echo $@
+
+
+USAGE="sessioner.sh -u <your AWS user> -t <MFA OTP token> -a <your AWS account ID>"
+
+if [ "$#" == "0" ]; then
+	echo "$USAGE"
+	exit 1
+fi
+
 POSITIONAL=()
 while [[ $# -gt 0 ]]
 do
